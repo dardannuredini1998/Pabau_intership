@@ -1,0 +1,19 @@
+button{
+    margin-top: 10px;
+    border: 0px none ;
+    background-color: rgb(29, 123, 211);
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: white;
+}
+.checkbox-container {
+    margin-bottom: 10px;
+  }
+  #selected-values {
+    margin-top: 10px;
+  }
+
+input{
+   cursor: pointer;
+}
