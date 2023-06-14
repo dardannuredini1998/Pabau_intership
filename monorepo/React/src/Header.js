@@ -6,8 +6,12 @@ import list from "./data";
 export default function Header() {
     let {id} = useParams();
 
-    const activeItem = list.find(item => item.id === id)
 
+    const activeItem = list.find(item => item.id === id)
+    
+    /** 
+     * if the activeItem didn't finde the item.id that equals with id from listit stays in the home page
+    */
     if (!activeItem) {
         return (
             <header>
@@ -19,6 +23,9 @@ export default function Header() {
         )
     }
     return (
+          /** 
+     * if it does then goes to the second page or 2/2 and it shows a backButton
+    */
         <header>
             <Link className='backButton' to={'/'}>Back</Link>
             <div>
